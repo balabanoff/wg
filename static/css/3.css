@@ -1,0 +1,49 @@
+.third {
+    color: #707275;
+    font-family: Arial;
+    width: 60%;
+}
+
+.third h2 {
+    font-size: 18px;
+    margin: 25px 0px;
+}
+
+.text-block {
+    font-size: 14px;
+    line-height: 20px;
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 1px solid #9E9F9F;
+}
+.text-block > p, 
+.text-block .list > p {
+    white-space: pre-wrap;
+    margin-bottom: 25px;
+}
+.text-block .list {
+    list-style-type: decimal;
+    margin-left: 15px;
+    /* list-style-position: inside; */
+}
+.text-block .list > p {
+    margin: 25px 0px;
+    margin-left: -20px;
+}
+.text-block .list li {
+    font-weight: bold;
+}
+.text-block .list li span,
+.text-block .list li ul,
+.text-block .list li ul li,
+.text-block .list li p{
+    font-weight: normal;
+}
+.text-block .list li span{
+    font-size: 14px;
+    color: #4d4e53
+}
+
+.text-block .inner-list li::before{
+    content: '-';
+}

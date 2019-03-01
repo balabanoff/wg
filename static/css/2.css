@@ -1,0 +1,89 @@
+.second {
+    width: 60%;
+    padding-top: 15px;
+}
+.adaptiv-list {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+/* ############################################################### */
+.selected-item {
+    display: none;    
+    color: #707275;
+    line-height: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0,0,0,0.04);
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(200,200,200,0.85);
+    width: 150px;
+    height: 32px;
+}
+
+.selected-item span::before {
+    content: url(../img/menu-ico.png);
+    padding-right: 8px;
+}
+
+@media all and (max-width: 800px) {
+    .selected-item {
+        display: block;
+    }
+    .list {
+        display: none;
+        position: absolute;
+        text-align: left;
+        box-shadow: 0 0 2px rgba(0,0,0,0.04);
+        background-color: rgba(255,255,255,0.5);
+        border: 1px solid rgba(200,200,200,0.85);
+    }
+    
+    .list a {
+        text-decoration: none;
+        color: #707275;
+        display: block;
+        padding: 10px;
+        padding-left: 25px;    
+    }
+    
+    .list .active a{
+        color: #2a2a2a;   
+    }
+    
+    .list .active a::before{
+        content: url(../img/arrow-ico.png);
+        margin-left: -15px;
+        padding-right: 2px;
+    }   
+
+    .show {
+        display: block;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .list {
+        display: flex;
+    }
+    .list li {
+        cursor: pointer;
+        margin: 10px;
+    }
+    
+    .list li a {
+        text-decoration: none;
+        padding: 7px;
+        display: block;
+        color: #707275;
+    }
+    
+    .list .active {
+        background-color: #707275;
+        border-radius: 5px;
+    }
+    
+    .list .active a {
+        color: #eff0f1;
+    }
+}

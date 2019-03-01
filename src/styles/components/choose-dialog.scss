@@ -1,0 +1,54 @@
+.choose-dialog {
+    background-color: #3F3F3F;
+    color: white;
+    padding: 20px 35px;
+    margin-top: 25px;
+    .dialog-head {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 25px;
+        span:last-child {
+            cursor: pointer;
+        }
+    }
+    .dialog-buttons {
+        display: flex;
+        margin-top: 10px;
+        button {
+            color: white;
+            border: none;
+            background-color:#778C03;
+            cursor: pointer;
+            outline: none;
+            margin-right: 10px;
+            padding: 10px 10px;
+            text-align: left;
+            min-width: 150px;
+        }
+    }    
+
+    .filters {
+        display: flex;
+        align-items: center;
+        input, select {
+           margin: 0 15px;
+           padding: 5px;
+           outline: none;
+        }        
+    }
+
+    .checkbox {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        height: 200px;
+        overflow-y: scroll;
+        margin: 20px 0px;
+        p {
+            margin: 10px 0px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
